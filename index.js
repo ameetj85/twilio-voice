@@ -13,7 +13,7 @@ var io = require('socket.io')(http, {
   }
 });
 
-const corsOptions = { origin: "http://127.0.0.1:5500" };
+const corsOptions = { origin: "*:5500" };
 
 app.use(cors(corsOptions));
 
