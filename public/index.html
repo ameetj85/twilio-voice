@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css" type="text/css" >
+    <title>Document</title>
+    <script src="https://cdn.socket.io/4.5.4/socket.io.min.js"></script>
+    <script src="https://cdn.openfin.co/services/openfin/notifications/1.22.0/openfin-notifications.js"></script>
+    <script src="./index.js"></script>
+</head>
+<body>
+    <h3 style="text-align: center;background-color: blue; color: white;">CALL CENTER</h3>
+    <div class="container">
+      <button onclick="sendACK()">Send ACK To Server</button>
+    </div>
+    <p id="incomingMessage" 
+    style="text-align: center;background-color: black; color: yellow;"></p>
+</body>
+
+</html>
