@@ -1,7 +1,6 @@
 const express = require('express');
 const VoiceResponse = require('twilio').twiml.VoiceResponse;
 const urlencoded = require('body-parser').urlencoded;
-const socket = require('socket.io');
 var cors = require('cors');
 
 const app = express();
@@ -46,7 +45,7 @@ io.on('connection', function (socket) {
 
 // Test GET
 app.get('/', (req, res) => {
-  res.send('<h1>Hello world</h1>');
+  res.send('<h1>Hello from the Call Center Service</h1>');
 });
 
 // Create a route that will handle Twilio webhook requests, sent as an
